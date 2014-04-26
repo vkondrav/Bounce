@@ -7,12 +7,15 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\paddle</sprite>
+    <sprite>sprites\spr_redblock</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\game_engine</object>
     <object>objects\obj_paddle</object>
+    <object>objects\obj_block</object>
+    <object>objects\obj_blockdispenser</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_game</room>

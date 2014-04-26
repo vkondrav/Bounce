@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>press_down = false;
+            <string>globalvar paddleLeft;
+globalvar paddleRight;
+
+paddleLeft = x - sprite_width/2;
+paddleRight = x + sprite_width/2;
+
+press_down = false;
 press_point_x = 0;
 current_point_x = 0;
 paddle_origin_x = x;
@@ -84,6 +90,9 @@ if(press_down){
         x = temp_x;
     }
 }
+
+paddleLeft = x - sprite_width/2;
+paddleRight = x + sprite_width/2;
 </string>
           </argument>
         </arguments>
