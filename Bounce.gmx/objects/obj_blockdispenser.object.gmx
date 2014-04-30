@@ -25,9 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>spawn_rate = room_speed * 1;
-
-alarm[0] = spawn_rate;
+            <string>spawn_rate = 0;
+block_spr = 0;
+dx = 0;
+dy = 0;
+amount = 0;
+var_gravity = 0;
 </string>
           </argument>
         </arguments>
@@ -53,11 +56,17 @@ alarm[0] = spawn_rate;
             <string>inst = instance_create(x,y,obj_block);
 inst.x = x;
 inst.y = y;
-inst.dx = 10;
-inst.dy = 10;
-inst.var_gravity = 0.2;
+inst.dx = dx;
+inst.dy = dy;
+inst.var_gravity = var_gravity;
+inst.sprite_index = spr_redblock;
 
-alarm[0] = spawn_rate;
+if (amount &gt; 0){
+    alarm[0] = spawn_rate;
+    amount--;
+}else{
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

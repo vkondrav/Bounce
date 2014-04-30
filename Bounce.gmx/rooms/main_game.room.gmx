@@ -52,7 +52,7 @@
   <instances>
     <instance objName="game_engine" x="0" y="32" name="inst_34FDA693" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_paddle" x="992" y="960" name="inst_B311CC21" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_blockdispenser" x="-32" y="928" name="inst_293E139F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_dispenserController" x="-32" y="960" name="inst_AFAB4B12" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

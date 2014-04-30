@@ -16,6 +16,7 @@
     <object>objects\obj_paddle</object>
     <object>objects\obj_block</object>
     <object>objects\obj_blockdispenser</object>
+    <object>objects\obj_dispenserController</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_game</room>
