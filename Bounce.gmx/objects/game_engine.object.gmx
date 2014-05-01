@@ -25,7 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>globalvar dropline;
+            <string>///Creation
+globalvar dropline;
 dropline = 960;
 </string>
           </argument>

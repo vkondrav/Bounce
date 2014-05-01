@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>rate = room_speed * 10;
+            <string>rate = room_speed * floor(random_range(5,10));
 alarm[0] = rate;
 </string>
           </argument>
@@ -52,15 +52,15 @@ alarm[0] = rate;
             <string>inst = instance_create(x,y,obj_blockdispenser);
 inst.x = x;
 inst.y = y;
-inst.dx = 10;
-inst.dy = 10;
-inst.var_gravity = 0.2;
+inst.dx = random_range(5,20);
+inst.dy = random_range(5,20);
+inst.var_gravity = random_range(1,5)/10;
 inst.block_spr = spr_redblock;
-inst.amount = 6;
-inst.spawn_rate = room_speed * 1;
+inst.amount = floor(random_range(2,10));
+inst.spawn_rate = room_speed * random_range(5,20)/10;
 inst.alarm[0] = inst.spawn_rate;
 
-alarm[0] = rate;
+alarm[0] = room_speed * floor(random_range(5,10));
 </string>
           </argument>
         </arguments>
