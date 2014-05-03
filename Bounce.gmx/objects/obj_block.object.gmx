@@ -26,15 +26,17 @@
           <argument>
             <kind>1</kind>
             <string>x = 0;
-y = global.dropline;
+y = 0;
 
-dx = 8.0;
-dy = 12.0;
+dx = 0;
+dy = 0;
 
 org_dx = dx;
 org_dy = dy;
 
-var_gravity = 0.2;
+var_gravity = 0;
+
+final_frame = 0;
 
 </string>
           </argument>
