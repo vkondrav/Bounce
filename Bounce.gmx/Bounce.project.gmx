@@ -14,7 +14,7 @@
   <scripts name="scripts">
     <script>scripts\returnSection.gml</script>
     <script>scripts\returnXcord.gml</script>
-    <script>scripts\returnFinalFrame.gml</script>
+    <script>scripts\returnFinalFrames.gml</script>
     <script>scripts\checkAvail.gml</script>
   </scripts>
   <objects name="objects">

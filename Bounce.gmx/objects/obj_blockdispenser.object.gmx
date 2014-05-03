@@ -30,7 +30,8 @@ block_spr = 0;
 dx = 0;
 dy = 0;
 amount = 0;
-var_gravity = 0;
+total = 0;
+g = 0;
 </string>
           </argument>
         </arguments>
@@ -58,8 +59,12 @@ inst.x = x;
 inst.y = y;
 inst.dx = dx;
 inst.dy = dy;
-inst.var_gravity = var_gravity;
-inst.sprite_index = spr_redblock;
+inst.org_dy = dy;
+inst.g = g;
+inst.sprite_index = block_spr;
+
+inst.finalFrameArray = returnFinalFrames(x,y,dx,dy,g,spawn_rate*(total - amount));
+
 
 if (amount &gt; 0){
     alarm[0] = spawn_rate;
