@@ -107,9 +107,8 @@ if(!found){
     
     spawn_rate = room_speed * random_range(5,20)/10;
     amount = floor(random_range(2,10));
-    
-    if(checkAvail(x,y,dx,dy,g,spawn_rate,amount))
-        found = true;    
+     
+    found = checkAvail(x,y,dx,dy,g,spawn_rate,amount);
 }
 </string>
           </argument>

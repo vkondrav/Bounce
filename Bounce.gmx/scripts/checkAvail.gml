@@ -24,6 +24,9 @@ for(var i = 1; i <= amount; i++){
                 for(var jj = 0; jj < array_length_1d(inst.finalFrameArray); jj++)
                     if(abs(inst.finalFrameArray[jj] - finalFrame[j]) < room_speed)
                         return false;
+        else{
+            return false;
+        }
     }
 }
 
