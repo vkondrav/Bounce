@@ -8,7 +8,7 @@ var dy = argument3;
 var org_dy = dy;
 var g = argument4;
 var sFrame = argument5;
-var frameArray = -1;
+var frameArray = false;
 
 mx = org_x;
 my = org_y;
@@ -21,17 +21,13 @@ for(var i = sFrame; true; i++){
     my = my + dy;
     dy = dy - g;  
    
-    if(my <= org_y){
+    if(my > org_y){
         frameArray[j] = i;
         j = j + 1;
         dy = org_dy;
     }
     
-    if(mx > room_width){
-        if(!is_array(frameArray)){
-            show_debug_message(my);
-            show_debug_message(mx);  
-        }   
+    if(mx > room_width){  
         return frameArray;
     }
 }

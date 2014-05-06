@@ -30,7 +30,7 @@ block_spr = 0;
 dx = 0;
 dy = 0;
 amount = 0;
-total = 0;
+n = 0;
 g = 0;
 </string>
           </argument>
@@ -63,9 +63,11 @@ inst.org_dy = dy;
 inst.g = g;
 inst.sprite_index = block_spr;
 
-inst.finalFrameArray = returnFinalFrames(x,y,dx,dy,g,spawn_rate*(total - amount));
+for(var i = 1; i &lt;= array_length_1d(final_frames); i++)
+    inst.final_frames[i - 1] = final_frames[i - 1] + spawn_rate*n; 
 
-
+n++;    
+    
 if (amount &gt; 0){
     alarm[0] = spawn_rate;
     amount--;
